@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap">
+</head>
+<body>
+    <div class="container-main3">
+        <section class="add-task3">
+            <h2>Adicionar Tarefa:</h2>
+            <form id="addTaskForm">
+                <div class="input-group3">
+                    <input type="text" id="task-title3" name="task-title3" placeholder="Informe o título da tarefa" required>
+                </div>
+                <div class="input-group3">
+                    <input type="text" id="task-description3" name="task-description3" placeholder="Informe a descrição da tarefa">
+                </div>
+                <button type="button" onclick="addTask()">Adicionar</button>
+            </form>
+        </section>
+
+        <section class="mark-as-done3">
+            <h2>Marcar Tarefa como Concluída:</h2>
+            <form id="markAsDoneForm">
+                <div class="input-group3">
+                    <label for="task-index3">Índice da Tarefa:</label>
+                    <input type="number" id="task-index3" name="task-index3" placeholder="Informe o índice da tarefa" min="1" required>
+                </div>
+                <button type="button" onclick="markAsDone()">Confirmar</button>
+            </form>
+        </section>
+        
+
+        <section class="task-list3">
+            <div class="task-details3">
+                <h2>Título da Tarefa</h2>
+            
+            </div>
+            <div class="task-list-container3" id="taskListContainer">
+
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
