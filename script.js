@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function addTask() {
-    const title = document.getElementById('task-title3').value;
-    const description = document.getElementById('task-description3').value;
+    const title = document.getElementById('task-title').value;
+    const description = document.getElementById('task-description').value;
     const task = { title, description, status: 'pendente' };
     tasks.push(task);
     updateTaskList();
@@ -20,7 +20,7 @@ function addTask() {
 }
 
 function markAsDone() {
-    const index = document.getElementById('task-index3').value;
+    const index = document.getElementById('task-index').value;
     const adjustedIndex = index - 1;
 
     if (adjustedIndex >= 0 && adjustedIndex < tasks.length) {

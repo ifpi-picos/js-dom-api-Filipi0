@@ -10,38 +10,38 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container-main3">
-        <section class="add-task3">
+    <div class="container-main">
+        <section class="add-task">
             <h2>Adicionar Tarefa:</h2>
             <form id="addTaskForm">
-                <div class="input-group3">
-                    <input type="text" id="task-title3" name="task-title3" placeholder="Informe o título da tarefa" required>
+                <div class="input-group">
+                    <input type="text" id="task-title" name="task-title" placeholder="Informe o título da tarefa" required>
                 </div>
-                <div class="input-group3">
-                    <input type="text" id="task-description3" name="task-description3" placeholder="Informe a descrição da tarefa">
+                <div class="input-group">
+                    <input type="text" id="task-description" name="task-description" placeholder="Informe a descrição da tarefa">
                 </div>
                 <button type="button" onclick="addTask()">Adicionar</button>
             </form>
         </section>
 
-        <section class="mark-as-done3">
+        <section class="mark-as-done">
             <h2>Marcar Tarefa como Concluída:</h2>
             <form id="markAsDoneForm">
-                <div class="input-group3">
-                    <label for="task-index3">Índice da Tarefa:</label>
-                    <input type="number" id="task-index3" name="task-index3" placeholder="Informe o índice da tarefa" min="1" required>
+                <div class="input-group">
+                    <label for="task-index">Índice da Tarefa:</label>
+                    <input type="number" id="task-index" name="task-index" placeholder="Informe o índice da tarefa" min="1" required>
                 </div>
                 <button type="button" onclick="markAsDone()">Confirmar</button>
             </form>
         </section>
         
 
-        <section class="task-list3">
-            <div class="task-details3">
+        <section class="task-list">
+            <div class="task-details">
                 <h2>Título da Tarefa</h2>
             
             </div>
-            <div class="task-list-container3" id="taskListContainer">
+            <div class="task-list-container" id="taskListContainer">
 
             </div>
         </section>
