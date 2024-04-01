@@ -45,7 +45,7 @@ section {
     box-sizing: border-box;
     border: 4px solid white; 
     border-radius: 10px;
-    margin-top: 35px;
+    margin-top: 30px;
     margin-bottom: 40px;
     color: #a8a8a8; 
 }
@@ -72,19 +72,19 @@ button:hover {
 
 #task-title {
     font-size: 17px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-right: 10px;
 }
 
 #task-description {
     font-size: 17px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-right: 10px;
 }
 
 #task-index {
     font-size: 17px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-right: 10px;
 }
 
