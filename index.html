@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Task Manager</h1>
+    </header>
     <div class="container-main">
         <section class="add-task">
             <h2>Adicionar Tarefa:</h2>
             <form id="addTaskForm">
                 <div class="input-group">
-                    <input type="text" id="task-title" name="task-title" placeholder="Informe o título da tarefa" required>
+                    <input type="text" id="task-title" name="task-title" placeholder="Informe o título da tarefa"
+                        required>
                 </div>
                 <div class="input-group">
-                    <input type="text" id="task-description" name="task-description" placeholder="Informe a descrição da tarefa">
+                    <input type="text" id="task-description" name="task-description"
+                        placeholder="Informe a descrição da tarefa">
                 </div>
                 <button type="button" onclick="addTask()">Adicionar</button>
             </form>
@@ -31,17 +36,18 @@
             <form id="markAsDoneForm">
                 <div class="input-group">
                     <label for="task-index">Índice da Tarefa:</label>
-                    <input type="number" id="task-index" name="task-index" placeholder="Informe o índice da tarefa" min="1" required>
+                    <input type="number" id="task-index" name="task-index" placeholder="Informe o índice da tarefa"
+                        min="1" required>
                 </div>
                 <button type="button" onclick="markAsDone()">Confirmar</button>
             </form>
         </section>
-        
+
 
         <section class="task-list">
             <div class="task-details">
                 <h2>Título da Tarefa</h2>
-            
+
             </div>
             <div class="task-list-container" id="taskListContainer">
 
@@ -51,4 +57,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
