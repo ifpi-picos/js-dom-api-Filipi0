@@ -1,62 +1,24 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <title>Gerenciador de Tarefas</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
     <link rel="stylesheet" href="css/style.css">
+    <title>Lista de tarefas</title>
+
 </head>
 
 <body>
-    <header>
-        <h1>Task Manager</h1>
-    </header>
-    <div class="container-main">
-        <section class="add-task">
-            <h2>Adicionar Tarefa:</h2>
-            <form id="addTaskForm">
-                <div class="input-group">
-                    <input type="text" id="task-title" name="task-title" placeholder="Informe o título da tarefa"
-                        required>
-                </div>
-                <div class="input-group">
-                    <input type="text" id="task-description" name="task-description"
-                        placeholder="Informe a descrição da tarefa">
-                </div>
-                <button type="button" onclick="addTask()">Adicionar</button>
-            </form>
-        </section>
 
-        <section class="mark-as-done">
-            <h2>Marcar Tarefa como Concluída:</h2>
-            <form id="markAsDoneForm">
-                <div class="input-group">
-                    <label for="task-index">Índice da Tarefa:</label>
-                    <input type="number" id="task-index" name="task-index" placeholder="Informe o índice da tarefa"
-                        min="1" required>
-                </div>
-                <button type="button" onclick="markAsDone()">Confirmar</button>
-            </form>
-        </section>
-
-
-        <section class="task-list">
-            <div class="task-details">
-                <h2>Título da Tarefa</h2>
-
-            </div>
-            <div class="task-list-container" id="taskListContainer">
-
-            </div>
-        </section>
+    <div class="container">
+        <h1>Task manager</h1>
+        <input type="text" id="taskInput" placeholder="Adicione uma tarefa...">
+        <button onclick="addTask()">Adicionar</button>
+        <ul id="taskList"></ul>
     </div>
 
     <script src="script.js"></script>
-    <script src="https://apis.google.com/js/api.js"></script>
-</body>
 
-</html>
+</body>
