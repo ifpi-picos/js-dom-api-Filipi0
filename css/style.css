@@ -1,5 +1,5 @@
 body {
-    background-color: #2e204b;
+    background-color: #252728;
     color: #fff;
     font-family: Roboto, sans-serif;
     margin: 0;
@@ -10,7 +10,7 @@ body {
     max-width: 500px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #3f2b68;
+    background-color: #611a83;
     border-radius: 10px;
 }
 
@@ -19,7 +19,7 @@ h1 {
 }
 
 input {
-    width: 80%;
+    width: 82%;
     padding: 8px;
     font-size: 16px;
     border: none;
@@ -31,12 +31,12 @@ input {
 button {
     padding: 8px 16px;
     font-size: 16px;
-    background-color: #563d91;
-    color: #fff;
+    background-color: #ffffff;
+    color: #611a83;
     border: none;
-    border-radius: 5px;
+    border-radius: 16px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 ul {
